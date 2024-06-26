@@ -23,8 +23,7 @@ class BookStorePlugin {
     }
 
     public function load_textdomain() {
-        load_plugin_textdomain('book-store', false, basename(dirname(__FILE__)) . '/languages');
-
+        load_plugin_textdomain('book-store', false, dirname(plugin_basename(__FILE__)) . '/languages');
     }
 
     public function create_books_info_table() {
@@ -52,7 +51,7 @@ class BookStorePlugin {
             'public' => true,
             'has_archive' => true,
             'supports' => array('title', 'editor', 'thumbnail'),
-            'taxonomies' => array('publisher', 'authors'), // Ensure these taxonomies are registered
+            'taxonomies' => array(__('publisher', 'book-store'), __('authors', 'book-store')), // Ensure these taxonomies are registered
             'show_in_rest' => true,
             'menu_icon' => 'dashicons-book-alt', // Optional: Adds a specific icon
         ));
@@ -60,7 +59,7 @@ class BookStorePlugin {
 
     public function register_publisher_taxonomy() {
         $labels = array(
-            'name' => _x('Publishers', 'taxonomy general name', 'book-store'),
+            'name' => __('Publishers', 'book-store'),
             'singular_name' => _x('Publisher', 'taxonomy singular name', 'book-store'),
             'search_items' => __('Search Publishers', 'book-store'),
             'all_items' => __('All Publishers', 'book-store'),
@@ -79,6 +78,7 @@ class BookStorePlugin {
             'show_ui' => true,
             'show_in_menu' => true, // Ensure it shows up in the admin menu
             'show_in_nav_menus' => true,
+            'show_admin_column' => true,
             'show_in_rest' => true, // Enables Gutenberg support
             'query_var' => true,
             'rewrite' => array('slug' => 'publisher'),
@@ -89,7 +89,7 @@ class BookStorePlugin {
 
     public function register_author_taxonomy() {
         $labels = array(
-            'name' => _x('Authors', 'taxonomy general name', 'book-store'),
+            'name' => __('Authors', 'book-store'),
             'singular_name' => _x('Author', 'taxonomy singular name', 'book-store'),
             'search_items' => __('Search Authors', 'book-store'),
             'all_items' => __('All Authors', 'book-store'),
@@ -108,6 +108,7 @@ class BookStorePlugin {
             'show_ui' => true,
             'show_in_menu' => true,
             'show_in_nav_menus' => true,
+            'show_admin_column' => true,
             'show_in_rest' => true, // Enables Gutenberg editor support
             'query_var' => true,
             'rewrite' => array('slug' => 'author'),
