@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Book Store Plugin 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Books"
+msgstr ""
+
+msgid "Book"
+msgstr ""
+
+msgid "Publishers"
+msgstr ""
+
+msgid "Publisher"
+msgstr ""
+
+msgid "Search Publishers"
+msgstr ""
+
+msgid "All Publishers"
+msgstr ""
+
+msgid "Parent Publisher"
+msgstr ""
+
+msgid "Parent Publisher:"
+msgstr ""
+
+msgid "Edit Publisher"
+msgstr ""
+
+msgid "Update Publisher"
+msgstr ""
+
+msgid "Add New Publisher"
+msgstr ""
+
+msgid "New Publisher Name"
+msgstr ""
+
+msgid "Authors"
+msgstr ""
+
+msgid "Author"
+msgstr ""
+
+msgid "Search Authors"
+msgstr ""
+
+msgid "All Authors"
+msgstr ""
+
+msgid "Parent Author"
+msgstr ""
+
+msgid "Parent Author:"
+msgstr ""
+
+msgid "Edit Author"
+msgstr ""
+
+msgid "Update Author"
+msgstr ""
+
+msgid "Add New Author"
+msgstr ""
+
+msgid "New Author Name"
+msgstr ""
+
+msgid "ISBN Number"
+msgstr ""
+
+msgid "Post ID"
+msgstr ""
+
+msgid "ISBN"
+msgstr ""
+
+msgid "Books Info"
+msgstr ""
+
+msgid "Book Info"
+msgstr ""
+
+msgid "No script kiddies please!"
+msgstr ""
